@@ -14,7 +14,7 @@ const Header = () => {
             alt="logo"
           />
         </Link>
-        <h1>AD Performance</h1>
+        <h1>AD Blog</h1>
       </div>
 
       <div>
@@ -22,7 +22,7 @@ const Header = () => {
           href="https://adperformance.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#bd93f9] flex items-center rounded-full text-center"
+          className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#bd93f9] hover:bg-gray-100 flex items-center rounded-full text-center"
         >
           Check out AD Performance
         </Link>

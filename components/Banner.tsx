@@ -5,24 +5,23 @@ const Banner = () => {
           lg:flex-row lg:space-x-5"
     >
       <div>
-        <h1 className="text-7xl">AD Performance Blog</h1>
+        <h1 className="text-5xl">AD Performance Blog</h1>
         <h2
           className="mt-5
               md:mt-8"
         >
           Welcome to{" "}
           <span className="underline decoration-4 decoration-[#bd93f9]">
-            every Athletes
+            the athlete blog,
           </span>
-          {""} favourite blog
+          {""} from the field to the blog.
         </h2>
       </div>
       <p
         className="mt-5 text-gray-400 max-w-sm
           md:mt-2 "
       >
-        Weekly blog post about athlete development, training, nutrition and moch
-        moore. Stay tuned in!
+        The ultimate resource for athlete training, development and nutrition.
       </p>
     </div>
   );

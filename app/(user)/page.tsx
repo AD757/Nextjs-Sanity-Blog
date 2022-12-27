@@ -16,23 +16,23 @@ const query = groq`
 export const revalidate = 60; // revalidate this page every 60 seconds
 
 export default async function HomePage() {
-	if (previewData()) {
-		return (
-			<PreviewSuspense
-				fallback={
-					<div role="status">
-						<p className="text-center text-lg animate-pulse text-[#F7AB0A]">
-							Loading Preview Data...
-						</p>
-					</div>
-				}
-			>
-				<PreviewBlogList query={query} />
-			</PreviewSuspense>
-		);
-	}
+  if (previewData()) {
+    return (
+      <PreviewSuspense
+        fallback={
+          <div role="status">
+            <p className="text-center text-lg animate-pulse text-[#F7AB0A]">
+              Loading Preview Data...
+            </p>
+          </div>
+        }
+      >
+        <PreviewBlogList query={query} />
+      </PreviewSuspense>
+    );
+  }
 
-	const posts = await client.fetch(query);
+  const posts = await client.fetch(query);
 
-	return <BlogList posts={posts} />;
+  return <BlogList posts={posts} />;
 }

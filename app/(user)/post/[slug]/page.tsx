@@ -42,6 +42,11 @@ async function Post({ params: { slug } }: Props) {
 
   return (
     <article className="px-10 pb-28">
+      <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded mb-10">
+        <a className="text-black" href="/">
+          Back
+        </a>
+      </button>
       <section className="scace-y-2 border border-[#bd93f9] text-white">
         <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
           <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
@@ -96,7 +101,6 @@ async function Post({ params: { slug } }: Props) {
           </section>
         </div>
       </section>
-
       <PortableText value={post.body} components={RichTextComponents} />
     </article>
   );
