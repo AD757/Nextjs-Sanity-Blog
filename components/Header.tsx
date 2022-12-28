@@ -22,7 +22,7 @@ const Header = () => {
           href="https://adperformance.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#bd93f9] hover:bg-gray-100 flex items-center rounded-full text-center"
+          className="px-2 py-3 text-sm md:text-base bg-[#8F00FF] text-[#FFF] hover:bg-[#483248] flex items-center rounded-lg text-center"
         >
           Check out AD Performance
         </Link>

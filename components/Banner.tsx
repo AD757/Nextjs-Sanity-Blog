@@ -11,18 +11,18 @@ const Banner = () => {
               md:mt-8"
         >
           Welcome to{" "}
-          <span className="underline decoration-4 decoration-[#bd93f9]">
-            the athlete blog,
+          <span className="underline underline-offset-2 decoration-4 decoration-[#8F00FF]">
+            the athlete
           </span>
-          {""} from the field to the blog.
+          {""} blog, from the field to the blog.
         </h2>
       </div>
-      <p
-        className="mt-5 text-gray-400 max-w-sm
-          md:mt-2 "
-      >
-        The ultimate resource for athlete training, development and nutrition.
-      </p>
+
+      <div className="bg-clip-border">
+        <p className="text-[#000] bg-[#FFED00] max-w-xs md:mt-2 text-center rounded-lg py-2 mt-6">
+          The ultimate resource for athlete training, development and nutrition.
+        </p>
+      </div>
     </div>
   );
 };

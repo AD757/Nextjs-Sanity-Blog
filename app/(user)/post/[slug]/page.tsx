@@ -47,7 +47,7 @@ async function Post({ params: { slug } }: Props) {
           Back
         </a>
       </button>
-      <section className="scace-y-2 border border-[#bd93f9] text-white">
+      <section className="scace-y-2 border border-[#8F00FF] text-white">
         <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
           <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
             <Image
@@ -58,7 +58,7 @@ async function Post({ params: { slug } }: Props) {
             />
           </div>
 
-          <section className="p-5 bg-[#bd93f9] w-full">
+          <section className="p-5 bg-[#8F00FF] w-full">
             <div className="flex flex-col md:flex-row justify-between gap-y-5">
               <div>
                 <h1 className="text-4xl font-extrabold">{post.title}</h1>
@@ -72,7 +72,7 @@ async function Post({ params: { slug } }: Props) {
               </div>
               <div className="flex items-center space-x-2">
                 <Image
-                  className="rounded-full"
+                  className="rounded-lg"
                   src={urlFor(post.author.image).url()}
                   alt={post.author.name}
                   height={40}
@@ -91,7 +91,7 @@ async function Post({ params: { slug } }: Props) {
                 {post.categories.map((category) => (
                   <p
                     key={category._id}
-                    className="bg-gray-800 text-white px-3 py-1 rounded-full text-sm font-semibold mt-4"
+                    className="bg-gray-800 text-white px-3 py-1 rounded-lg text-sm font-semibold mt-4"
                   >
                     {category.title}
                   </p>
