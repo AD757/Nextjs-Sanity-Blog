@@ -14,7 +14,7 @@ const Header = () => {
             alt="logo"
           />
         </Link>
-        <h1>AD Blog</h1>
+        <h1>AD</h1>
       </div>
 
       <div>
@@ -24,7 +24,7 @@ const Header = () => {
           rel="noopener noreferrer"
           className="px-2 py-3 text-sm md:text-base bg-[#8F00FF] text-[#FFF] hover:bg-[#483248] flex items-center rounded-lg text-center"
         >
-          Check out AD Performance
+          AD Performance 🌐
         </Link>
       </div>
     </header>

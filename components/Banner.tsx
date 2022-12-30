@@ -17,12 +17,14 @@ const Banner = () => {
           {""} blog, from the field to the blog.
         </h2>
       </div>
-
-      <div className="bg-clip-border">
-        <p className="text-[#000] bg-[#FFED00] max-w-xs md:mt-2 text-center rounded-lg py-2 mt-6">
-          The ultimate resource for athlete training, development and nutrition.
-        </p>
-      </div>
+      <p className=" max-w-xs md:mt-2 py-2 mt-6 font-extrabold">
+        The{" "}
+        <span className="underline underline-offset-2 decoration-4 decoration-[#8F00FF]">
+          {" "}
+          ultimate resource
+        </span>{" "}
+        for athlete training, development and nutrition.
+      </p>
     </div>
   );
 };

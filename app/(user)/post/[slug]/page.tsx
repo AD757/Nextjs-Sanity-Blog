@@ -42,11 +42,25 @@ async function Post({ params: { slug } }: Props) {
 
   return (
     <article className="px-10 pb-28">
-      <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded mb-10">
-        <a className="text-black" href="/">
-          Back
-        </a>
-      </button>
+      <a className="text-black inline-flex" href="/">
+        <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded mb-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 mr-2 inline-flex"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"
+            />
+          </svg>
+          Go back
+        </button>
+      </a>
       <section className="scace-y-2 border border-[#8F00FF] text-white">
         <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
           <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
