@@ -1,3 +1,6 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -8,11 +11,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const router = usePathname();
+  const hideBanner = router?.startsWith("/post/") ? false : true;
   return (
     <html>
       <body className="max-w-7xl mx-auto">
         <Header />
-        <Banner />
+        {hideBanner && <Banner />}
         {children}
         <Footer />
       </body>
