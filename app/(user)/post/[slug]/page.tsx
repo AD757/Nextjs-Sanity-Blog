@@ -42,8 +42,11 @@ async function Post({ params: { slug } }: Props) {
 
   return (
     <article className="px-10 pb-28">
-      <a className="text-black inline-flex" href="/">
-        <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded mb-10">
+      <a
+        className="transform transition duration-400 hover:scale-105 inline-flex"
+        href="/"
+      >
+        <button className="font-semibold py-2 px-4 border border-gray-400 rounded mb-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5 mr-2 inline-flex"

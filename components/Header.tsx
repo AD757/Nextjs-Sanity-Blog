@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import DarkModeButton from "./DarkModeButton";
 
 const Header = () => {
   return (
-    <header className="flex items.center justify-between space-x-2 font-bold px-10 py-5">
+    <header className="flex items-center justify-between space-x-2 font-bold px-10 py-5">
       <div className="flex items-center space-x-2">
         <Link href="/">
           <Image
@@ -14,10 +15,9 @@ const Header = () => {
             alt="logo"
           />
         </Link>
-        <h1>AD</h1>
       </div>
 
-      <div>
+      <div className="flex items-center space-x-6">
         <Link
           href="https://adperformance.netlify.app/"
           target="_blank"
@@ -26,6 +26,7 @@ const Header = () => {
         >
           AD Performance 🌐
         </Link>
+        <DarkModeButton />
       </div>
     </header>
   );
