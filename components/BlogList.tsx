@@ -1,6 +1,3 @@
-import Image from "next/image";
-import urlFor from "../lib/urlFor";
-import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import ClientSideRoute from "./ClientSideRoute";
 import PostCard from "./PostCard";
 
