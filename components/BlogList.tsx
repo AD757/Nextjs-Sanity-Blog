@@ -5,7 +5,7 @@ type Props = {
   posts: Post[];
 };
 
-function BlogList({ posts }: Props) {
+const BlogList = ({ posts }: Props) => {
   return (
     <div className="relative z-0">
       <hr className="border-[#8F00FF] mb-10" />
@@ -18,6 +18,6 @@ function BlogList({ posts }: Props) {
       </div>
     </div>
   );
-}
+};
 
 export default BlogList;

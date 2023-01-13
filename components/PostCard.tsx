@@ -38,12 +38,10 @@ const PostCard = ({ post }: Props) => {
           </div>
         </div>
       </div>
-
       <div className="mt-5 flex-1">
         <p className="underline text-lg font-bold">{post.title}</p>
         <p className="line-clamp-2 text-gray-500">{post.description}</p>
       </div>
-
       <p className="mt-5 font-bold flex items-center group-hover:underline">
         Read Post
         <ArrowUpRightIcon className="ml-2 h-4 w-4" />

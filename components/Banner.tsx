@@ -1,5 +1,3 @@
-import DarkModeButton from "./DarkModeButton";
-
 const Banner = () => {
   return (
     <div

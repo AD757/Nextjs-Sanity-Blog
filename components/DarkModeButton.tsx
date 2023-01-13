@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 
-function DarkModeButton() {
+const DarkModeButton = () => {
   const [mount, setMount] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
 
@@ -29,6 +29,6 @@ function DarkModeButton() {
       )}
     </div>
   );
-}
+};
 
 export default DarkModeButton;
