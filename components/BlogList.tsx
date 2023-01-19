@@ -31,13 +31,26 @@ const BlogList = ({ posts }: Props) => {
         ))}
       </div>
       <div className="flex justify-center">
-        <button
-          type="button"
-          className="px-2 py-3 text-sm md:text-base bg-[#8F00FF] text-[#FFF] hover:bg-[#483248] flex items-center rounded-lg text-center"
-          onClick={handleClick}
-        >
-          {showAll ? "All articles loaded" : "Load More Articles"}
-        </button>
+        {!showAll ? (
+          <button
+            type="button"
+            className="group relative overflow-hidden bg-white px-2 py-3 text-sm md:text-base rounded-lg"
+            onClick={handleClick}
+          >
+            <div className="absolute inset-0 w-3  bg-[#8F00FF]  transition-all duration-[350ms] ease-out group-hover:w-full"></div>
+            <span className="relative text-black group-hover:text-white ">
+              Load More Articles
+            </span>
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="bg-[#8F00FF] text-[#FFF] hover:bg-[#483248] px-2 py-3 text-sm md:text-base rounded-lg transition-all duration-[250ms] ease-out"
+            onClick={handleClick}
+          >
+            All articles loaded
+          </button>
+        )}
       </div>
     </div>
   );
