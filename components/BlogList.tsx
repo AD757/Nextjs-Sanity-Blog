@@ -45,12 +45,16 @@ const BlogList = ({ posts }: Props) => {
         ) : (
           <button
             type="button"
-            className="bg-[#8F00FF] text-[#FFF] hover:bg-[#483248] px-2 py-3 text-sm md:text-base rounded-lg transition-all duration-[250ms] ease-out"
+            className="bg-[#483248] text-[#FFF] px-2 py-3 text-sm md:text-base rounded-lg opacity-50 cursor-not-allowed"
             onClick={handleClick}
+            disabled
           >
             All articles loaded
           </button>
         )}
+      </div>
+      <div className="flex justify-center mt-5">
+        Showing {items.length} of {items.length} articles
       </div>
     </div>
   );
