@@ -27,11 +27,11 @@ const ScrollToTop = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-4 right-2 z-50">
+    <div className="fixed bottom-3 right-0 z-50">
       {isVisible && (
         <ArrowUpCircleIcon
           onClick={scrollToTop}
-          className="h-8 w-8 cursor-pointer text-gray-900 dark:text-white"
+          className="w-10 cursor-pointer text-gray-900 dark:text-white hover:text-[#8F00FF] dark:hover:text-[#483248] "
         />
       )}
     </div>
