@@ -52,9 +52,6 @@ const BlogList = ({ posts }: Props) => {
           </button>
         )}
       </div>
-      <div className="flex justify-center mt-5">
-        Showing {loadMore} of {posts?.length} articles
-      </div>
     </div>
   );
 };
